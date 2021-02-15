@@ -1,13 +1,67 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.marker {
+  stroke: #fff;
+  fill: #00f;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.popup {
+  width: 250px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  overflow: hidden;
+  z-index: 333;
+}
+
+.popup img {
+  width: 100%;
+  height: auto;
+}
+
+.entry-form {
+  width: 300px;
+  overflow: hidden;
+  padding: 10px;
+  border: solid #000 2px;
+}
+
+.entry-form form {
+  height: 100%;
+}
+
+.entry-form textarea {
+  width: 100%;
+  resize: none;
+}
+
+.entry-form button {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  background-color: #00f;
+  color: #fff;
+  padding: 8px;
+  cursor: pointer;
+  border: solid 2px #000;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.entry-form label,
+.entry-form input {
+  margin: 0.5rem 0;
+  display: block;
+  width: 100%;
 }
